@@ -20,15 +20,14 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-    /* HEADER : logo */
+    /* logo */
 .logo img {
     width: 130px;
 }
-    /* HEADER : navbar */
+    /* navbar */
 nav ul {
     display: flex;
     flex-wrap: wrap-reverse;
-    /*flex-basis : 90%; ?????????? */
 }
 nav li  {
     list-style-type: none;
@@ -57,7 +56,7 @@ nav ul div {
 }
 
 /* SECTION 1 : SEARCH */
-    /* SECTION 1 : presentation */
+    /* presentation */
 .presentation h1 {
     font-size: 1.9em;
     font-weight: 800;
@@ -67,7 +66,7 @@ nav ul div {
     font-size: 1.3em;
     margin: 0.5em 0em 1em 0em;
 }
-    /* SECTION 1 : searchbar */
+    /* searchbar */
 .map_icon {
     background-color: #F2F2F2;
     color: black;
@@ -95,7 +94,7 @@ nav ul div {
     padding: 0.8em 0.8em 0.8em 0.8em;
     cursor: pointer;
 }
-    /* SECTION 1 : filters */
+    /* filters */
 .filters {
     display: flex;
     align-items: center;
@@ -138,8 +137,7 @@ nav ul div {
 .filter_button:hover {
     background-color: #F2F2F2;
 }
-
-    /* SECTION 1 : information */
+    /* information */
 .search_info {
     display: inline-flex;
     align-items: center;
@@ -164,9 +162,11 @@ nav ul div {
     margin: 3em 0em;
 }
 /* SECTION 2 : LODGING IN MARSEILLE */
+    /* block : lodging in Marseille*/
 #section_2 {
     background-color: #F2F2F2;
     width: 60%;
+    height: auto;
     border-radius: 2em;
     padding: 1.5em 3em;
 }
@@ -180,16 +180,39 @@ nav ul div {
     font-weight: 800;
     text-decoration: none;
 }
-.lodging_choices h3{
+.more {
+    margin: 1.3em 0em 2em 0em;
+}
+.lodging_flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+    /* blocks : lodging choices */
+.lodging_choices {
+    background-color: white;
+    width: 320px;
+    height: 260px;
+    border-radius: 1.6em;
+    margin-bottom: 2.5em;
+    box-shadow: 0.3em 0.3em 1.6em #c9c9c9 ;
+} 
+    /* text */
+.lodging_titles {
     font-size: 1.4em;
     font-weight: 800;
+    margin: 0em 0em 0.5em 0em;
 }
-.lodging_choices p {
+.lodging_prices {
     font-size: 1.2em;
+    margin: 0em 0em 0.5em 0em;
 }
-.lodging_choices p em {
+.lodging_prices em {
     font-weight: 800;
     font-style: normal;
+}
+.lodging_text {
+    padding: 0em 1.2em;
 }
 .blue_star {
     color:#0065FC;
@@ -197,15 +220,16 @@ nav ul div {
 .grey_star {
     color: #F2F2F2;
 }
-
-.auberge_la_cannebiere {
-    background-color: white;
-    width: 300px;
-    border-radius: 2em;
-    padding: 0.8em 1.2em;
+/* pictures */
+.lodging_img {
+    text-align: center;   
 }
-.auberge_la_cannebiere img {
-max-width: 300px;
+.lodging_img img {
+    width: 95%;
+    height: 145px;
+    object-fit: cover;
+    border-radius: 1.6em 1.6em 0em 0em;
+    padding: 0.4em;
 }
 
 /* SECTION 3 : MOST POPULAR */
