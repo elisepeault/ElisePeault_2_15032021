@@ -6,11 +6,12 @@
 
 /* MAIN */     
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800;900&display=swap');
-body {
+* {
     font-family: 'Raleway', sans-serif;
 }
-.bloc_page {
-    width: 100%;
+#bloc_page {
+    width: 95%;
+    margin : 0em 3em;
 }
 
 /* HEADER */
@@ -18,50 +19,214 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0em 2em
 }
-/* HEADER : logo */
-.logo {
-    display: flex;
-    margin-left: 20px;
-}
+    /* HEADER : logo */
 .logo img {
     width: 130px;
 }
-/* HEADER : navbar */
+    /* HEADER : navbar */
 nav ul {
     display: flex;
-    flex-wrap: wrap;
-    flex-basis : 90%;
+    flex-wrap: wrap-reverse;
+    /*flex-basis : 90%; ?????????? */
 }
 nav li  {
     list-style-type: none;
-    margin: 0em 1.6em 0em 0.4em;
-    padding: 3.2em 2em 3.2em 2em;
 }
-.hebergements a, .activites a{
-    text-decoration: none;
+nav ul div {
+    padding: 2.5em 2.5em 2.5em 2.5em;
+    align-items: center;
+}
+.lodging a, .activities a {
     color: #000000;
-    font-size: 1.4em;
+    font-size: 1.3em;
     font-weight: 500;
+    text-decoration: none;
 }
-.hebergements:hover, .activites:hover {
+.lodging div:hover, .activities div:hover {
     border-top: solid #0065FC;
 }
-.hebergements a:hover, .activites a:hover {
-    color:#0065FC
+.lodging a:hover, .activities a:hover {
+    color:#0065FC;
 }
-.sinscrire a {
-    text-decoration: none;
-    font-size: 1.4em;
+.subscribe a {
+    color:#0065FC;
+    font-size: 1.3em;
     font-weight: 800;
-    color:#0065FC
+    text-decoration: none;
 }
 
 /* SECTION 1 : SEARCH */
+    /* SECTION 1 : presentation */
+.presentation h1 {
+    font-size: 1.9em;
+    font-weight: 800;
+    margin: 0em 0em;
+}
+.presentation p {
+    font-size: 1.3em;
+    margin: 0.5em 0em 1em 0em;
+}
+    /* SECTION 1 : searchbar */
+.map_icon {
+    background-color: #F2F2F2;
+    color: black;
+    font-size: 1.5em;
+    padding: 0.8em 0.8em 0.8em 1em;
+    border-radius: 0.8em 0em 0em 0.8em;
+}
+.searchbar form {
+    display: inline-flex;
+}
+.searchbar input {
+    font-size: 1.5em;
+    font-weight: bold;
+    border: solid #F2F2F2;
+    border-width: 0.09em; 
+    padding : 0.8em 0em 0.8em 0.8em;
+}
+.searchbar button {
+    background-color: #0065FC;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+    border: none;
+    border-radius: 0em 0.8em 0.8em 0em;
+    padding: 0.8em 0.8em 0.8em 0.8em;
+    cursor: pointer;
+}
+    /* SECTION 1 : filters */
+.filters {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3em 0em;
+}
+.filters p {
+    font-size: 24px;
+    font-weight: 800;
+}
+.filter_button {
+    background-color: white;
+    color: #0065FC;
+    font-size: 24px; 
+    font-weight: 800;
+    border: 0.16em solid #F2F2F2;
+    border-radius: 5em;
+    display: inline-flex;
+    box-sizing: border-box;
+    margin-left: 2em;
+    align-items: center;
+    height: 60px;
+}
+.filter_button span a {
+    color: #000000;
+    text-decoration: none;
+    padding: 0 0.5em 0 0.5em;
+}
+.filters i {
+    background: #DEEBFF;
+    width: 2.5em;
+    height: 2.5em; 
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.5em;
+    vertical-align: middle;
+    position: relative;
+    left: -0.16em;
+}
+.filter_button:hover {
+    background-color: #F2F2F2;
+}
 
+    /* SECTION 1 : information */
+.search_info {
+    display: inline-flex;
+    align-items: center;
+}
+.search_info i {
+    color: #0065FC;
+    font-size: 1em;
+    border: solid #F2F2F2; 
+    border-width: 0.15em;
+    padding: 0.4em 0.7em;
+    border-radius: 50%;
+}
+.search_info span {
+    font-size: 1.3em;
+    margin-left: 0.7em;
+}
+/* SECTION 2 & 3 */
+#section_2_3 {
+    display : flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    margin: 3em 0em;
+}
 /* SECTION 2 : LODGING IN MARSEILLE */
+#section_2 {
+    background-color: #F2F2F2;
+    width: 60%;
+    border-radius: 2em;
+    padding: 1.5em 3em;
+}
+#section_2 h2 {
+    font-size: 1.9em;
+    font-weight: 800;
+}
+.more a {
+    color: black;
+    font-size: 1.5em;
+    font-weight: 800;
+    text-decoration: none;
+}
+.lodging_choices h3{
+    font-size: 1.4em;
+    font-weight: 800;
+}
+.lodging_choices p {
+    font-size: 1.2em;
+}
+.lodging_choices p em {
+    font-weight: 800;
+    font-style: normal;
+}
+.blue_star {
+    color:#0065FC;
+}
+.grey_star {
+    color: #F2F2F2;
+}
 
-/* SECTION 3 : ACTIVITIES IN MARSEILLE */
+.auberge_la_cannebiere {
+    background-color: white;
+    width: 300px;
+    border-radius: 2em;
+    padding: 0.8em 1.2em;
+}
+.auberge_la_cannebiere img {
+max-width: 300px;
+}
+
+/* SECTION 3 : MOST POPULAR */
+#section_3 {
+    background-color: #F2F2F2;
+    width: 26%;
+    border-radius: 2em;
+    padding: 1.5em 3em;
+}
+#section_3 h2 {
+    font-size: 1.9em;
+    font-weight: 800;
+}
+.title_icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title_icon i {
+    font-size: 2em;
+}
+/* SECTION 4 : ACTIVITIES IN MARSEILLE */
 
 /* FOOTER */
