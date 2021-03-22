@@ -233,6 +233,7 @@ nav ul div {
 }
 
 /* SECTION 3 : MOST POPULAR */
+    /* block most popular*/
 #section_3 {
     background-color: #F2F2F2;
     width: 26%;
@@ -251,6 +252,51 @@ nav ul div {
 .title_icon i {
     font-size: 2em;
 }
+    /* blocks most popular lodging*/
+.most_popular_choices {
+    background-color: white;
+    width: 100%;
+    height: 183px;
+    border-radius: 1.6em;
+    margin-bottom: 2.5em;
+    box-shadow: 0.3em 0.3em 1.6em #c9c9c9 ; 
+    display: flex;
+}
+.most_popular_flex {
+    display: flex;
+    flex-direction: column;
+}
+    /* text */
+.most_popular_titles {
+    font-size: 1.4em;
+    font-weight: 800;
+    margin: 0em 0em 0.5em 0em;
+}
+.most_popular_prices {
+    font-size: 1.2em;
+    margin: 0em 0em 2.4em 0em;   
+}
+.most_popular_prices em {
+    font-weight: 800;
+    font-style: normal;
+}
+.most_popular_text {
+    width: 200px;
+    margin: 1.2em 0em 1.2em 2em;
+}
+
+    /* pictures */
+.most_popular_img {
+    width: 160px;
+    }
+.most_popular_img img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 1.6em 0em 0em 1.6em;
+    padding: 0.4em; 
+}
+
 /* SECTION 4 : ACTIVITIES IN MARSEILLE */
 
 /* FOOTER */
