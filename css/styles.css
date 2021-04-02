@@ -497,17 +497,16 @@ h2 {
     font-size: 1.6em;
 }
 .searchbar {
-    width: 330px;
-    margin: 3em 0em 3em 0em;
+   margin: 3em 0em 3em 0em;
 }
 .map_icon {
-    font-size: 30px;
+    font-size: 1.7em;
 }
 .searchbar input {
-    font-size: 30px;
+    font-size: 1.7em;
 }
 .icon_button {
-    font-size: 30px;
+    font-size: 1.7em;
     border-radius: 0.8em 0.8em 0.8em 0.8em;
     padding: 0.8em 0.9em 0.8em 0.9em;
     background-color: #0065FC;
