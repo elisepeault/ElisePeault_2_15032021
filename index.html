@@ -3,83 +3,83 @@
     <head>
         <meta charset="utf-8" />
         <title>Reservia</title> 
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="css/styles.css"/>
         <script src="https://kit.fontawesome.com/b1a905584b.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
-            <!-- HEADER -->
-            <header>
-                <nav>
-                    <div class="logo">
-                        <img src="images/logo/Reservia.svg" alt="logo Reservia" />
-                    </div>
-                    <ul>
-                        <li class="lodging">
-                            <a href="#lodging_anchor">Hébergements</a>
-                        </li>
-                        <li class="activities">
-                        	<a href="#activities_anchor">Activités</a>
-                        </li>
-                        <li class="subscribe">
-	                        <a href="#">S'inscrire</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+        <!-- HEADER -->
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="images/logo/Reservia.svg" alt="logo Reservia" />
+                </div>
+                <ul>
+                    <li class="lodging">
+                        <a href="#lodging_anchor">Hébergements</a>
+                    </li>
+                    <li class="activities">
+                        <a href="#activities_anchor">Activités</a>
+                    </li>
+                    <li class="subscribe">
+                        <a href="#">S'inscrire</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-            <!-- MAIN -->
-            <main>
-                <!-- SEARCH -->
-                <section class="section_search">
-                    <!-- presentation -->
-                    <div class="presentation">
-                        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                        <p>En plein centre ville ou en pleine nature</p>
+        <!-- MAIN -->
+        <main>
+            <!-- SEARCH -->
+            <section class="section_search">
+                <!-- presentation -->
+                <div class="presentation">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre ville ou en pleine nature</p>
+                </div>
+                <!-- searchbar -->
+                <div class="searchbar">
+                    <form method="post" action="#">
+                        <span class="map_icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                        <input type="text" name="search" placeholder="Marseille, France"/>
+                        <button class="text_button" type="submit">Rechercher</button>
+                        <button class="icon_button" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <!-- filters -->
+                <div class="filters">  
+                    <p>Filtres</p>
+                    <div class="filter_button"> 
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span><a href="#">Économique</a></span>
                     </div>
-                    <!-- searchbar -->
-                    <div class="searchbar">
-                        <form method="post" action="#">
-                            <span class="map_icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </span>
-                            <input type="text" name="search" placeholder="Marseille, France"/>
-                            <button class="text_button" type="submit">Rechercher</button>
-                            <button class="icon_button" type="submit">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </form>
+                    <div class="filter_button">
+                        <i class="fas fa-child"></i>
+                        <span><a href="#">Familial</a></span>
                     </div>
-                    <!-- filters -->
-                    <div class="filters">  
-                        <p>Filtres</p>
-                        <div class="filter_button"> 
-                            <i class="fas fa-money-bill-wave"></i>
-                            <span><a href="#">Économique</a></span>
-                        </div>
-                        <div class="filter_button">
-                            <i class="fas fa-child"></i>
-                            <span><a href="#">Familial</a></span>
-                        </div>
-                        <div class="filter_button">
-                            <i class="fas fa-heart"></i>
-                            <span><a href="#">Romantique</a></span>
-                        </div>
-                        <div class="filter_button">
-                            <i class="fas fa-dog"></i>
-                            <span><a href="#">Animaux autorisés</a></span>
-                        </div>
+                    <div class="filter_button">
+                        <i class="fas fa-heart"></i>
+                        <span><a href="#">Romantique</a></span>
                     </div>
-                    <!-- information -->
-                    <div class="search_info">
-                        <i class="fas fa-info"></i> 
-                        <span>Plus de 500 logements sont disponibles dans cette ville</span>
+                    <div class="filter_button">
+                        <i class="fas fa-dog"></i>
+                        <span><a href="#">Animaux autorisés</a></span>
                     </div>
-                </section>
+                </div>
+                <!-- information -->
+                <div class="search_info">
+                    <i class="fas fa-info"></i> 
+                    <span>Plus de 500 logements sont disponibles dans cette ville</span>
+                </div>
+            </section>
                 
-                <!-- LODGING & MOST POPULAR -->
-                <div class="section_lodging_popular"> 
+            <!-- LODGING & MOST POPULAR -->
+            <div class="section_lodging_popular"> 
 
                 <!-- LODGING IN MARSEILLE -->
                 <section class="section_lodging">
@@ -149,127 +149,127 @@
                         </div>
                         <!-- lodging "Hotel les mouette"-->
                         <div class="blocks_margin">
-                        <a href="#"> <!-- link to make the entire lodging block clickable-->
-                            <figure class="lodging_choices">
-                                <div class="lodging_img" >
-                                    <img src="images/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes" />
-                                </div>
-                                <figcaption class="lodging_text">
-                                    <h3 class="cards_titles">Hôtel les mouettes</h3> 
-                                    <p class="cards_prices">Nuit à partir de <em>76€</em></p>
-                                    <div class="lodging_stars">
-                                        <span class="blue_star">
-                                            <i class="fas fa-star"></i>
-                                        </span>
-                                        <span class="blue_star">
-                                            <i class="fas fa-star"></i>
-                                        </span>
-                                        <span class="blue_star">
-                                            <i class="fas fa-star"></i>
-                                        </span>
-                                        <span class="blue_star">
-                                            <i class="fas fa-star"></i>
-                                        </span>
-                                        <span class="grey_star">
-                                            <i class="fas fa-star"></i>
-                                        </span>
+                            <a href="#"> <!-- link to make the entire lodging block clickable-->
+                                <figure class="lodging_choices">
+                                    <div class="lodging_img" >
+                                        <img src="images/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes" />
                                     </div>
-                                </figcaption>
-                            </figure>
-                        </a>
+                                    <figcaption class="lodging_text">
+                                        <h3 class="cards_titles">Hôtel les mouettes</h3> 
+                                        <p class="cards_prices">Nuit à partir de <em>76€</em></p>
+                                        <div class="lodging_stars">
+                                            <span class="blue_star">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            <span class="blue_star">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            <span class="blue_star">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            <span class="blue_star">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            <span class="grey_star">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
                         </div>
                         <!-- lodging "Hotel de la mer"-->
                         <div class="blocks_margin">
-                        <a href="#"> <!-- link to make the entire lodging block clickable-->
-                            <figure class="lodging_choices">
-                                <div class="lodging_img" >
-                                    <img src="images/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer" />
-                                </div>
-                                <figcaption class="lodging_text">
-                                    <h3 class="cards_titles">Hôtel de la mer</h3> 
-                                    <p class="cards_prices">Nuit à partir de <em>46€</em></p>
-                                    <div class="lodging_stars">
-                                        <span class="blue_star">
-                                            <i class="fas fa-star"></i>
-                                        </span>
-                                        <span class="blue_star">
-                                            <i class="fas fa-star"></i>
-                                        </span>
-                                        <span class="blue_star">
-                                            <i class="fas fa-star"></i>
-                                        </span>
-                                        <span class="grey_star">
-                                            <i class="fas fa-star"></i>
-                                        </span>
-                                        <span class="grey_star">
-                                            <i class="fas fa-star"></i>
-                                        </span>
+                            <a href="#"> <!-- link to make the entire lodging block clickable-->
+                                <figure class="lodging_choices">
+                                    <div class="lodging_img" >
+                                        <img src="images/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer" />
                                     </div>
-                                </figcaption>
-                            </figure>
-                        </a>
+                                    <figcaption class="lodging_text">
+                                        <h3 class="cards_titles">Hôtel de la mer</h3> 
+                                        <p class="cards_prices">Nuit à partir de <em>46€</em></p>
+                                        <div class="lodging_stars">
+                                            <span class="blue_star">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            <span class="blue_star">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            <span class="blue_star">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            <span class="grey_star">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            <span class="grey_star">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
                         </div>
                         <!-- lodging "Auberge Le panier"-->
                         <div class="blocks_margin">
-                        <a href="#"> <!-- link to make the entire lodging block clickable-->
-                            <figure class="lodging_choices">
-                                <div class="lodging_img" >
-                                    <img src="images/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier" />
-                                </div>
-                                <figcaption class="lodging_text">
-                                    <h3 class="cards_titles">Auberge Le Panier</h3> 
-                                    <p class="cards_prices">Nuit à partir de <em>23€</em></p>
-                                    <div class="lodging_stars">
-                                        <span class="blue_star">
-                                            <i class="fas fa-star"></i>
-                                        </span>
-                                        <span class="blue_star">
-                                            <i class="fas fa-star"></i>
-                                        </span>
-                                        <span class="blue_star">
-                                            <i class="fas fa-star"></i>
-                                        </span>
-                                        <span class="blue_star">
-                                            <i class="fas fa-star"></i>
-                                        </span>
-                                        <span class="grey_star">
-                                            <i class="fas fa-star"></i>
-                                        </span>
+                            <a href="#"> <!-- link to make the entire lodging block clickable-->
+                                <figure class="lodging_choices">
+                                    <div class="lodging_img" >
+                                        <img src="images/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier" />
                                     </div>
-                                </figcaption>
-                            </figure>
-                        </a>
+                                    <figcaption class="lodging_text">
+                                        <h3 class="cards_titles">Auberge Le Panier</h3> 
+                                        <p class="cards_prices">Nuit à partir de <em>23€</em></p>
+                                        <div class="lodging_stars">
+                                            <span class="blue_star">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            <span class="blue_star">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            <span class="blue_star">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            <span class="blue_star">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            <span class="grey_star">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
                         </div>
                         <!-- lodging "Hotel chez Amina"-->
                         <div class="blocks_margin">
-                        <a href="#"> <!-- link to make the entire lodging block clickable-->
-                            <figure class="lodging_choices">
-                                <div class="lodging_img" >
-                                    <img src="images/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina" />
-                                </div>
-                                <figcaption class="lodging_text">
-                                    <h3 class="cards_titles">Hôtel chez Amina</h3> 
-                                    <p class="cards_prices">Nuit à partir de <em>96€</em></p>
-                                    <div class="lodging_stars">
-                                        <span class="blue_star">
-                                            <i class="fas fa-star"></i>
-                                        </span>
-                                        <span class="blue_star">
-                                            <i class="fas fa-star"></i>
-                                        </span>
-                                        <span class="blue_star">
-                                            <i class="fas fa-star"></i>
-                                        </span>
-                                        <span class="blue_star">
-                                            <i class="fas fa-star"></i>
-                                        </span>
-                                        <span class="blue_star">
-                                            <i class="fas fa-star"></i>
-                                        </span>
+                            <a href="#"> <!-- link to make the entire lodging block clickable-->
+                                <figure class="lodging_choices">
+                                    <div class="lodging_img" >
+                                        <img src="images/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina" />
                                     </div>
-                                </figcaption>
-                            </figure>
-                        </a>
+                                    <figcaption class="lodging_text">
+                                        <h3 class="cards_titles">Hôtel chez Amina</h3> 
+                                        <p class="cards_prices">Nuit à partir de <em>96€</em></p>
+                                        <div class="lodging_stars">
+                                            <span class="blue_star">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            <span class="blue_star">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            <span class="blue_star">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            <span class="blue_star">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            <span class="blue_star">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
                         </div>
                     </div>
                     <p class="more"><a href="#">Afficher plus</a></p>
@@ -377,122 +377,122 @@
                         </div>             
                     </div>
                 </section>
-                </div>
+            </div>
 
-                <!-- ACTIVITIES IN MARSEILLE -->
-                <section class="section_activities">
-                    <h2 id="activities_anchor">Activités à Marseille</h2>
-                    <div class="activities_flex">
-                        <!-- activities "vieux port"-->
+            <!-- ACTIVITIES IN MARSEILLE -->
+            <section class="section_activities">
+                <h2 id="activities_anchor">Activités à Marseille</h2>
+                <div class="activities_flex">
+                    <!-- activities "vieux port"-->
+                    <div class="blocks_margin">
+                        <a href="#"><!-- link to make the entire lodging block clickable-->
+                            <figure class="big_activities_choices">
+                                <div class="big_activities_img" >
+                                    <img src="images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" />
+                                </div>
+                                <figcaption class="activities_text">
+                                    <h3 class="cards_titles">Vieux Port</h3> 
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="container_2_activities">
+                        <!-- activities "Fort de Pomègues"-->
                         <div class="blocks_margin">
                             <a href="#"><!-- link to make the entire lodging block clickable-->
-                                <figure class="big_activities_choices">
-                                    <div class="big_activities_img" >
-                                        <img src="images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" />
+                                <figure class="medium_activities_choices">
+                                    <div class="medium_activities_img" >
+                                        <img src="images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" />
                                     </div>
                                     <figcaption class="activities_text">
-                                        <h3 class="cards_titles">Vieux Port</h3> 
+                                        <h3 class="cards_titles">Fort de Pomègues</h3> 
                                     </figcaption>
                                 </figure>
                             </a>
                         </div>
-                        <div class="container_2_activities">
-                            <!-- activities "Fort de Pomègues"-->
-                            <div class="blocks_margin">
-                                <a href="#"><!-- link to make the entire lodging block clickable-->
-                                    <figure class="medium_activities_choices">
-                                        <div class="medium_activities_img" >
-                                            <img src="images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" />
-                                        </div>
-                                        <figcaption class="activities_text">
-                                            <h3 class="cards_titles">Fort de Pomègues</h3> 
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-                            <!-- activities "Iles du Frioul"-->
-                            <div class="blocks_margin">
-                                <a href="#"><!-- link to make the entire lodging block clickable-->
-                                    <figure class="small_activities_choices">
-                                        <div class="small_activities_img" >
-                                            <img src="images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul" />
-                                        </div>
-                                        <figcaption class="activities_text">
-                                            <h3 class="cards_titles">Îles du Frioul</h3> 
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- activities "Parc National des Calanques"-->
+                        <!-- activities "Iles du Frioul"-->
                         <div class="blocks_margin">
                             <a href="#"><!-- link to make the entire lodging block clickable-->
-                                <figure class="big_activities_choices">
-                                    <div class="big_activities_img" >
-                                        <img src="images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques" />
+                                <figure class="small_activities_choices">
+                                    <div class="small_activities_img" >
+                                        <img src="images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul" />
                                     </div>
                                     <figcaption class="activities_text">
-                                        <h3 class="cards_titles">Parc National des Calanques</h3> 
+                                        <h3 class="cards_titles">Îles du Frioul</h3> 
                                     </figcaption>
                                 </figure>
                             </a>
-                        </div>
-                        <div class="container_2_activities">
-                            <!-- activities "Notre-Dame-de-la-Garde"-->
-                            <div class="blocks_margin">
-                                <a href="#"><!-- link to make the entire lodging block clickable-->
-                                    <figure class="standard_activities_choices">
-                                        <div class="standard_activities_img" >
-                                            <img src="images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" />
-                                        </div>
-                                        <figcaption class="activities_text">
-                                            <h3 class="cards_titles">Notre-Dame-de-la-Garde</h3> 
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-                            <!-- activities "Parc Longchamp"-->
-                            <div class="blocks_margin">
-                                <a href="#"><!-- link to make the entire lodging block clickable-->
-                                    <figure class="standard_activities_choices">
-                                        <div class="standard_activities_img" >
-                                            <img src="images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" />
-                                        </div>
-                                        <figcaption class="activities_text">
-                                            <h3 class="cards_titles">Parc Longchamp</h3> 
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
                         </div>
                     </div>
-                </section>
-            </main>
+                    <!-- activities "Parc National des Calanques"-->
+                    <div class="blocks_margin">
+                        <a href="#"><!-- link to make the entire lodging block clickable-->
+                            <figure class="big_activities_choices">
+                                <div class="big_activities_img" >
+                                    <img src="images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques" />
+                                </div>
+                                <figcaption class="activities_text">
+                                    <h3 class="cards_titles">Parc National des Calanques</h3> 
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="container_2_activities">
+                        <!-- activities "Notre-Dame-de-la-Garde"-->
+                        <div class="blocks_margin">
+                            <a href="#"><!-- link to make the entire lodging block clickable-->
+                                <figure class="standard_activities_choices">
+                                    <div class="standard_activities_img" >
+                                        <img src="images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" />
+                                    </div>
+                                    <figcaption class="activities_text">
+                                        <h3 class="cards_titles">Notre-Dame-de-la-Garde</h3> 
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <!-- activities "Parc Longchamp"-->
+                        <div class="blocks_margin">
+                            <a href="#"><!-- link to make the entire lodging block clickable-->
+                                <figure class="standard_activities_choices">
+                                    <div class="standard_activities_img" >
+                                        <img src="images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" />
+                                    </div>
+                                    <figcaption class="activities_text">
+                                        <h3 class="cards_titles">Parc Longchamp</h3> 
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-            <!-- FOOTER -->
-            <footer>
-                <div class="footer_category">
-                    <h2>A propos</h2>
-                    <ul>
-                        <li><a href="#">Fonctionnement du site</a></li>
-                        <li><a href="#">Conditions générales de vente</a></li>
-                        <li><a href="#">Données et confidentialité</a></li>
-                    </ul>
-                </div>
-                <div class="footer_category">
-                    <h2>Nos hébergements</h2>
-                    <ul>
-                        <li><a href="#">Charte qualité</a></li>
-                        <li><a href="#">Soumettre votre hôtel</a></li>
-                    </ul>
-                </div>
-                <div class="footer_category">
-                    <h2>Assistance</h2>
-                    <ul>
-                        <li><a href="#">Centre d'aide</a></li>
-                        <li><a href="#">Nous contacter</a></li>
-                    </ul>
-                </div>
-            </footer>
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer_category">
+                <h2>A propos</h2>
+                <ul>
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales de vente</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="footer_category">
+                <h2>Nos hébergements</h2>
+                <ul>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Soumettre votre hôtel</a></li>
+                </ul>
+            </div>
+            <div class="footer_category">
+                <h2>Assistance</h2>
+                <ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
+            </div>
+        </footer>
     </body>
 </html>

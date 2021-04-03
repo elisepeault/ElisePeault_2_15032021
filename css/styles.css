@@ -201,7 +201,6 @@ h2 {
     /* block : lodging in Marseille*/
 .section_lodging {
     background-color: #F2F2F2;
-    /*width: auto;*/
     border-radius: 2em;
     padding: 3em 3em 1.5em 3em;
 }
@@ -223,7 +222,6 @@ h2 {
     background-color: white;
     height: 240px;
     border-radius: 1.6em;
-    /*margin-bottom: 2.5em;*/
     box-shadow: 0.3em 0.3em 1.6em #c9c9c9 ;
 } 
     /* text */
@@ -440,6 +438,7 @@ header {
 }
 nav ul {
     flex-wrap: wrap-reverse;
+    width: 100%;
 }
 .logo {
     position: absolute;
