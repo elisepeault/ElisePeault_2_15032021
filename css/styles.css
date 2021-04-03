@@ -66,7 +66,7 @@ nav li  {
 }
     /* presentation */
 .presentation h1 {
-    font-size: 1.6em;
+    font-size: 1.5em;
     font-weight: 800;
 }
 .presentation p {
@@ -110,13 +110,13 @@ nav li  {
     margin: 2em 0em;
 }
 .filters p {
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 800;
 }
 .filter_button {
     background-color: white;
     color: #0065FC;
-    font-size: 1.3em; 
+    font-size: 1.2em;
     font-weight: 800;
     border: 0.16em solid #F2F2F2;
     border-radius: 5em;
@@ -171,7 +171,7 @@ nav li  {
 }    
     /* text */
 h2 {
-    font-size: 1.6em;
+    font-size: 1.5em;
     font-weight: 800;
     margin-bottom: 1em
 }
@@ -257,13 +257,12 @@ h2 {
     justify-content: space-between;
 }
 .title_icon i {
-    font-size: 1.6em;
+    font-size: 1.5em;
 }
     /* blocks : most popular lodging*/
 .most_popular_choices {
     background-color: white;
     height: 165px;
-    min-width: 380px;
     width: 100%;
     border-radius: 1.6em;
     box-shadow: 0.3em 0.3em 1.6em #c9c9c9 ; 
@@ -305,28 +304,32 @@ h2 {
     /* blocks : activities choices */
 .big_activities_choices {
     background-color: white;
-    width: 350px;
+    min-width: 300px;
+    max-width: 350px;
     height: 480px;
     border-radius: 1.6em;
     box-shadow: 0.3em 0.3em 1.6em #c9c9c9 ;
 } 
 .medium_activities_choices {
     background-color: white;
-    width: 350px;
+    min-width: 300px;
+    max-width: 350px;
     height: 250px;
     border-radius: 1.6em;
     box-shadow: 0.3em 0.3em 1.6em #c9c9c9 ; 
 }
 .standard_activities_choices {
     background-color: white;
-    width: 350px;
+    min-width: 300px;
+    max-width: 350px;
     height: 220px;
     border-radius: 1.6em;
     box-shadow: 0.3em 0.3em 1.6em #c9c9c9 ;  
 }
 .small_activities_choices {
     background-color: white;
-    width: 350px;
+    min-width: 300px;
+    max-width: 350px;
     height: 190px;
     border-radius: 1.6em;
     box-shadow: 0.3em 0.3em 1.6em #c9c9c9 ; 
@@ -396,34 +399,42 @@ footer ul li {
 
 /* RESPONSIVE : TABLET*/
 @media only screen and (max-width: 1300px) {
-header {
-    width: 100%;
-}
-.section_search {
-    width: 100%;
-}
+    /* lodging */
 .section_lodging_popular {
     flex-direction: column-reverse;
     margin: 0;
 }
 .section_lodging {
-    width: 100%;
     background: none;
 }
+    /* activities */
+.big_activities_choices {
+    min-width: 300px;
+    max-width: 320px;
+} 
+.medium_activities_choices {
+    min-width: 300px;
+    max-width: 320px;
+}
+.standard_activities_choices {
+    min-width: 300px;
+    max-width: 320px;
+}
+.small_activities_choices {
+    min-width: 300px;
+    max-width: 320px;
+}
+    /* most popular */
 .section_most_popular {
     border-radius: 0em;
     margin-left: 0;
-    width: 100%;
 }
 .lodging_flex .blocks_margin {
     width: 45%;
 }
-.section_activities {
-    width: 100%;
-}
+    /* footer */
 footer {
     padding: 3em 3em 0em 3em;
-    width: 100%;
 }
 .footer_category {
 padding: 0 1.5em 3em 1.5em;
@@ -438,30 +449,28 @@ header {
 }
 nav ul {
     flex-wrap: wrap-reverse;
-    width: 100%;
 }
 .logo {
     position: absolute;
-    padding-top: 40px;
-    padding-left: 3em;
-}
-.logo img  {
-    width: 9em;
+    padding-left: 1.5em;
 }
 .subscribe {
-   margin-left: 85%;
+   margin-left: 70%
 }
 .subscribe a {
     position: absolute;
     padding: 0;
-    font-size: 1.6em;
+    font-size: 1em;
+}
+.lodging, .activities {
+    width: 50%;
+    padding-top: 30px;
 }
 .lodging a, .activities a{
-    width: 50%;
-    font-size: 1.6em;
+    font-size: 1em;
     border-top: none;
     border-bottom: 5px solid #F2F2F2;
-    padding: 60px 70px 20px 70px;
+    padding: 30px 62px 20px 62px;
 }
 .lodging a:hover, .activities a:hover {
     color:#0065FC;
@@ -470,42 +479,45 @@ nav ul {
 }
     /* main */
 h2 {
-    font-size: 2.4em;
+    font-size: 1.3em;
     margin-bottom: 1.5em
 }
 .blocks_margin {
     margin-bottom: 1em;
 }
 .cards_titles {
-    font-size: 1.7em;
+    font-size: 1.1em;
 }
 .cards_prices {
-    font-size: 1.5em; 
+    font-size: 1em;
 }
 .blue_star {
-    font-size: 1.2em;
+    font-size: 0.7em;
 }
 .grey_star {
-    font-size: 1.2em;
+    font-size: 0.7em;
 }
     /* search */
+.section_search {
+    padding: 1.5em;
+}
 .presentation h1 {
-    font-size: 2.4em;
+    font-size: 1.3em;
 }
 .presentation p {
-    font-size: 1.6em;
+    font-size: 0.9em;
 }
 .searchbar {
-   margin: 3em 0em 3em 0em;
+   margin: 2em 0em 2em 0em;
 }
 .map_icon {
-    font-size: 1.7em;
+    font-size: 1.1em;
 }
 .searchbar input {
-    font-size: 1.7em;
+    font-size: 1.1em;
 }
 .icon_button {
-    font-size: 1.7em;
+    font-size: 1.1em;
     border-radius: 0.8em 0.8em 0.8em 0.8em;
     padding: 0.8em 0.9em 0.8em 0.9em;
     background-color: #0065FC;
@@ -522,98 +534,84 @@ h2 {
     align-items: flex-start;
 }
 .filters p {
-    font-size: 1.8em;
+   font-size: 1.1em;
     width: 100%;
     padding-bottom: 0.5em;
 }
 .filter_button {
-    font-size: 1.8em; 
+    font-size: 1.1em;
     margin-left: 0;
-    height: 75px;
+    height: 40px;
 }
 .search_info i {
-    font-size: 1.1em;
+   font-size: 0.7em;
 }
 .search_info span {
-    font-size: 1.6em;
+    font-size: 0.9em;
 }
     /* most popular */
-.title_icon i {
-    font-size: 2.5em;
+.section_most_popular {
+    padding: 1.5em;
 }
-.most_popular_choices {
-    height: 250px;
-}
-.most_popular_img img {
-    width: 200px;
-}
-.most_popular_text {
-    width: 240px;
+.title_icon i {  
+    font-size: 1.5em;
 }
     /* lodging */
+.section_lodging {
+    padding: 1.5em;
+}
 .lodging_flex {
     flex-direction: column;
 }
 .lodging_flex .blocks_margin {
     width: 100%;
 }
-.lodging_choices {
-    height: 340px;
-    margin-bottom: 1.5em;
-} 
-.lodging_img img {
-    height: 190px;
-}
-.more {
-    margin-top: 1.5em;
-}
-.more a {
-    font-size: 2em;
-}
     /* activities */
 .section_activities {
     flex-direction: column;
+    padding: 1.5em;
 }
 .big_activities_choices {
-    width: 100%;
-    height: 340px;
+    height: 240px;
+    min-width: 325px;
 } 
 .medium_activities_choices {
-    width: 100%;
-    height: 340px;
+    height: 240px;
+    min-width: 325px;
 }
 .standard_activities_choices {
-    width: 100%;
-    height: 340px;
+    height: 240px;
+    min-width: 325px;
 }
 .small_activities_choices {
-    width: 100%;
-   height: 340px;
+    height: 240px;
+    min-width: 325px;
 }
 .big_activities_img img {
-    height: 250px;
+    height: 180px;
 }
 .medium_activities_img img {
-    height: 250px;
+    height: 180px;
 }
 .standard_activities_img img {
-    height: 250px;
+    height: 180px;
 }
 .small_activities_img img {
-    height: 250px;
+    height: 180px;
 }
     /* footer */
 footer {
     flex-direction: column;
     flex-wrap: nowrap;
+    padding: 1.5em;
 }
 .footer_category {
-    padding-right: 0em;
+    padding: 0 0 2.5em 0;
 }
 footer h2 {
-    font-size: 2em;
+    font-size: 1.2em;
 }
 footer ul li {
-    font-size: 1.8em;
+    font-size: 1.1em;
 }
 } 
